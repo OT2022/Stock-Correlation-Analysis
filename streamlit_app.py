@@ -26,7 +26,7 @@ if st.button('Calculate Correlation'):
     # Check if data was actually returned
     if not data_adj.empty:
         # 1. Calculate the Rebased series (Start at 100)
-        rebased_data = (data_adj / data_adj.iloc[0]) * 100
+        rebased_data = (data_adj / data_adj.iloc[0]) * 1
         # Calculate returns
         price_return = data_adj.pct_change().dropna()
         

@@ -25,6 +25,8 @@ if st.button('Calculate Correlation'):
     
     # Check if data was actually returned
     if not data_adj.empty:
+        # 1. Calculate the Rebased series (Start at 100)
+        rebased_data = (data_adj / data_adj.iloc[0]) * 100
         # Calculate returns
         price_return = data_adj.pct_change().dropna()
         
@@ -35,7 +37,8 @@ if st.button('Calculate Correlation'):
         st.metric(label=f"Correlation: {ticker} vs {index}", value=f"{correlation:.2f}")
         
         # Display the chart
-        st.line_chart(data_adj) 
+        st.subheader("Relative Performance (Rebased to 100)")
+        st.line_chart(rebased_data)
     else:
         st.error("No data found for those dates or tickers.")
 

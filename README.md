@@ -22,6 +22,7 @@ Example Configuration:
 
 Below are the default input variables, which can be modified by the user.
 
+```python
 # --- 1. Import necessary libraries ---
 import yfinance as yf
 import pandas as pd
@@ -127,7 +128,7 @@ plt.tight_layout()
 
 # Display the plot
 plt.show()
-
+```
 
 The script above provides a comprehensive solution for calculating and visualizing the Pearson correlation coefficients between a defined set of stocks and their respective market indices.
 

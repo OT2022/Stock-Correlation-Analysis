@@ -11,7 +11,7 @@ end_date = st.text_input("Enter end date e.g. 2025-12-31", "2025-12-31")
 
 # Map ticker to index
 if ".L" in ticker:
-    index = "^FTSE"
+    index = '^FTSE'
 else:
     st.error("Ticker not currently available")
     st.stop() 

@@ -146,6 +146,7 @@ Moderate positive correlation (e.g., between 0.3 and 0.7): This suggests that th
 
 Low positive correlation (e.g., between 0 and 0.3): A low positive correlation indicates a weak tendency for the stock's returns to move with the market. These stocks are less influenced by broad market swings and can be valuable for portfolio diversification, as their performance is less predictable based solely on market performance.
 
+
 Negative correlation (e.g., below 0): This signifies that the stock's returns tend to move in the opposite direction to the market index. Such stocks are highly desirable for diversification, as they can help offset losses in a portfolio during market downturns. While theoretically beneficial, strong negative correlations are rare for most individual stocks relative to broad market indices.
 
 Zero correlation: A correlation close to zero implies no linear relationship between the stock's returns and the market index returns. The stock's movements are largely independent of the market, offering significant diversification potential.

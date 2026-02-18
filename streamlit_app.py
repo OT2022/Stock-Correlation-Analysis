@@ -3,7 +3,7 @@ import pandas as pd
 import yfinance as yf
 
 st.title("Relative Value: Correlation Tool")
-st.caption(""Note: Only UK (.L) tickers are currently supported. More countries to be added soon.")
+st.caption("Note: Only UK (.L) tickers are currently supported. More countries to be added soon.")
 
 # User input
 ticker = st.text_input("Enter Ticker e.g. VOD.L, BP.L, LLOY.L", "VOD.L")

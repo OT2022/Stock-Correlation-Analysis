@@ -13,7 +13,7 @@ end_date = st.text_input("Enter end date e.g. 2025-12-31", "2025-12-31")
 if ".L" in ticker:
     index = '^FTSE'
 else:
-    st.error("Ticker not currently available")
+    st.error("Ticker is not currently available")
     st.stop() 
 
 # Calculation logic
@@ -37,7 +37,7 @@ if st.button('Calculate Correlation'):
         st.metric(label=f"Correlation: {ticker} vs {index}", value=f"{correlation:.2f}")
         
         # Display the chart
-        st.subheader("Relative Performance (Rebased to 100)")
+        st.subheader("Relative Performance")
         st.line_chart(rebased_data)
     else:
         st.error("No data found for those dates or tickers.")

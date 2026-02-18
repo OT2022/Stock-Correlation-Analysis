@@ -26,6 +26,7 @@ Instructions for Use:
 4.  **Run**: Execute the script. It will download the data, perform the calculations, print the correlations to the console, and display a bar chart visualizing these correlations.
 
 ***Interpretating output***
+
 Pearson Correlation Coefficient Interpretation:
 The Pearson correlation coefficient, ranging from -1 to +1, measures the linear relationship between two variables. In the context of stock returns and market indices:
 

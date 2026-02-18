@@ -21,7 +21,7 @@ else:
 if st.button('Calculate Correlation'):
     # Download data using the variables
     data = yf.download([ticker, index], start=start_date, end=end_date)
-    data_adj = data['Adj Close']
+    data_adj = data['Close']
     
     # Check if data was actually returned
     if not data_adj.empty:

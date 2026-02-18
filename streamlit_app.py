@@ -35,7 +35,7 @@ if st.button('Calculate Correlation'):
         st.metric(label=f"Correlation: {ticker} vs {index}", value=f"{correlation:.2f}")
         
         # Display the chart
-        st.line_chart(data) 
+        st.line_chart(data_adj) 
     else:
         st.error("No data found for those dates or tickers.")
 

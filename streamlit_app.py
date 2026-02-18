@@ -20,12 +20,13 @@ else:
 # We use an 'if' statement for the button
 if st.button('Calculate Correlation'):
     # Download data using the variables
-    data = yf.download([ticker, index], start=start_date, end=end_date)['Adj Close']
+    data = yf.download([ticker, index], start=start_date, end=end_date)
+    data_adj = data['Adj Close']
     
     # Check if data was actually returned
-    if not data.empty:
+    if not data_adj.empty:
         # Calculate returns
-        price_return = data.pct_change().dropna()
+        price_return = data_adj.pct_change().dropna()
         
         # Calculate correlation
         correlation = price_return[ticker].corr(price_return[index])
